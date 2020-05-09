@@ -8,7 +8,7 @@
 .header {
   width: 100％;
   height: 48px;
-  background-color: rgb(161, 98, 56);
+  background-color: rgb(245, 119, 35);
   display: flex;
   justify-content: space-between;
   font-family: "SF Pro JP","SF Pro Display","SF Pro Icons","Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W3","メイリオ","Meiryo","ＭＳ Ｐゴシック","Helvetica Neue","Helvetica","Arial",sans-serif;
@@ -18,7 +18,7 @@
     line-height: 48px;
     margin-left: 40px;
     color: white;
-    font-size: 30px;
+    font-size: 25px;
   }
   .header-right {
     color: white;
@@ -40,6 +40,8 @@
 
 
 
+
+
 .main {
   width: 100vw;
   height: calc(100vh - 48px);
@@ -49,11 +51,12 @@
     display: flex;
     justify-content: center;
     position: relative;
-    align-items: center;
     .head-center {
+      position: absolute;
+      bottom: 0;
       font-size: 40px;
       font-weight: 600;
-      color: #0066cc;
+      color: #0071e3;
     }
     .head-right {
       position: absolute;
@@ -64,17 +67,7 @@
       width: 300px;
       display: flex;
       text-align: center;
-      &__male {
-        width: 33%;
-        height: 100%;
-        line-height: 100px;
-      }
-      &__female {
-        width: 33%;
-        height: 100%;
-        line-height: 100px;
-      }
-      &__likes {
+      li {
         width: 33%;
         height: 100%;
         line-height: 100px;
@@ -86,9 +79,9 @@
     flex-wrap: wrap;
     .front {
       height: 300px;
-      width: 20%;
+      width: 22%;
       border: solid 1px;
-      margin-left: 70px;
+      margin-left: 40px;
       margin-top: 40px;
     }
   }
