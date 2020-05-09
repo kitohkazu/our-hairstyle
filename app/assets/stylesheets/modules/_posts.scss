@@ -6,7 +6,7 @@
 }
 
 .header {
-  width: 100vw;
+  width: 100％;
   height: 70px;
   background-color: rgb(161, 98, 56);
   display: flex;
@@ -36,8 +36,22 @@
   }
 }
 
+
+
+
 .main {
   width: 100vw;
   height: calc(100vh - 70px);
   margin-top: 30px;
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    .front {
+      height: 300px;
+      width: 20%;
+      border: solid 1px;
+      margin-left: 70px;
+      margin-top: 40px;
+    }
+  }
 }
