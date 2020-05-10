@@ -39,9 +39,6 @@
 
 
 
-
-
-
 .main {
   width: 100vw;
   height: calc(100vh - 48px);
@@ -82,6 +79,24 @@
       width: 22%;
       border: solid 1px;
       margin-left: 40px;
+      margin-top: 40px;
+    }
+  }
+}
+
+
+.show-main {
+  width: 100vw;
+  height: calc(100vh - 48px);
+  background-color: #fff;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    .list {
+      height: 600px;
+      width: 45%;
+      border: solid 1px;
+      margin-left: 60px;
       margin-top: 40px;
     }
   }
