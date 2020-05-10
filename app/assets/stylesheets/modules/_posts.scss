@@ -40,7 +40,7 @@
 
 
 .main {
-  width: 100vw;
+  width: 100％;
   height: calc(100vh - 48px);
   background-color: #fff;
   .head {
@@ -86,18 +86,48 @@
 
 
 .show-main {
-  width: 100vw;
-  height: calc(100vh - 48px);
-  background-color: #fff;
+  height: 100%;
+  padding: 0px 40px;
   ul {
     display: flex;
     flex-wrap: wrap;
+    height: calc(100vh - 48px);
     .list {
-      height: 600px;
+      height: 60%;
       width: 45%;
       border: solid 1px;
       margin-left: 60px;
-      margin-top: 40px;
+      margin-top: 60px;
+    }
+    .lists__comment {
+      padding-left: 20px;
+      font-size: 30px;
+      .upper {
+        height: 20%;
+        display: flex;
+        align-items: center;
+        &__date {
+          
+        }
+        &__poster {
+          padding-left: 30px;
+        }
+      }
+      .midle {
+        height: 60%;
+        padding-top: 10px;
+      }
+      .bottom {
+        height: 20%;
+        display: flex;
+        align-items: center;
+        &__btn {
+
+        }
+        &__icon {
+          padding-left: 50px;
+        }
+      }
     }
   }
 }
