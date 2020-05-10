@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 
+/*共通headerのSCSS*/
 .header {
   width: 100％;
   height: 48px;
@@ -38,7 +39,7 @@
 }
 
 
-
+/*indexページのSCSS*/
 .main {
   width: 100％;
   height: calc(100vh - 48px);
@@ -84,7 +85,7 @@
   }
 }
 
-
+/*showページのSCSS*/
 .show-main {
   height: 100%;
   padding: 0px 40px;
@@ -128,6 +129,18 @@
           padding-left: 50px;
         }
       }
+    }
+  }
+}
+
+/*newページのSCSS*/
+.new-main {
+  height: 100%;
+  margin: 0 auto;
+  .photos {
+    display: flex;
+    .photo {
+      
     }
   }
 }
