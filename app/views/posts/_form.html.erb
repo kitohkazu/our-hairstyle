@@ -1,0 +1,16 @@
+<div class="new-main">
+  <div class="photos">
+    <%= image_tag "/images/hyojoo_front.jpeg", size: "300x250", alt: "正面写真" %>
+    <%= image_tag "/images/hyojoo_side.jpeg", size: "300x250", alt: "側面写真" %>
+    <%= image_tag "/images/hyojoo_back.jpeg", size: "300x250", alt: "背面写真" %>
+  </div>
+  <%= form_with model: "@post" class: "" do |form| %>
+    <%= f.fields_for :images do |i| %>
+      <%= i.file_field :src %><br>
+    <% end %>
+    <%= f.text_area :comment, placeholder: "コメントを入力してください" %>
+    <%= f.submit "送信" %>
+  <% end %>
+</div>
+
+   <%= form.file_filed :image %>
