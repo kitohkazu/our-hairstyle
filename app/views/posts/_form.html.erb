@@ -3,7 +3,7 @@
     <% post.images.each do |image| %>
     <%= image_tag image.src.url %>
   </div>
-  <%= form_with model: "@post" class: "" do |form| %>
+  <%= form_with model: "@post" do |f| %>
     <%= f.fields_for :images do |i| %>
       <%= i.file_field :src %><br>
     <% end %>
@@ -11,5 +11,3 @@
     <%= f.submit "送信" %>
   <% end %>
 </div>
-
-   <%= form.file_filed :image %>
