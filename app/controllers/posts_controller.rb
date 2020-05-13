@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   def index
-    # @posts = Post.includes(:images).order('created_at DESC')
+    @posts = Post.includes(:images).order('created_at DESC')
   end
 
   def new

@@ -28,4 +28,10 @@
     </div>
   </div>
 
+  <div class="photos">
+  <% @post.images.each do |image| %>
+    <%= image_tag image.src.url %>
+  <% end %>
+  </div>
+
 </div>
