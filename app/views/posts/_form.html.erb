@@ -1,8 +1,7 @@
 <div class="new-main">
   <div class="photos">
-    <%= image_tag "/images/hyojoo_front.jpeg", size: "300x250", alt: "正面写真" %>
-    <%= image_tag "/images/hyojoo_side.jpeg", size: "300x250", alt: "側面写真" %>
-    <%= image_tag "/images/hyojoo_back.jpeg", size: "300x250", alt: "背面写真" %>
+    <% post.images.each do |image| %>
+    <%= image_tag image.src.url %>
   </div>
   <%= form_with model: "@post" class: "" do |form| %>
     <%= f.fields_for :images do |i| %>
