@@ -1,0 +1,146 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+* {
+  box-sizing: border-box;
+}
+
+/*共通headerのSCSS*/
+.header {
+  width: 100％;
+  height: 48px;
+  background-color: rgb(245, 119, 35);
+  display: flex;
+  justify-content: space-between;
+  font-family: "SF Pro JP","SF Pro Display","SF Pro Icons","Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W3","メイリオ","Meiryo","ＭＳ Ｐゴシック","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-weight: 400;
+  .header-left {
+    height: 100%;
+    line-height: 48px;
+    margin-left: 40px;
+    color: white;
+    font-size: 25px;
+  }
+  .header-right {
+    color: white;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    &__name {
+      margin-right: 40px;
+     
+    }
+    &__btn {
+      margin-right: 30px;
+      border: solid 1px;
+      padding: 7px;
+    }
+  }
+}
+
+
+/*indexページのSCSS*/
+.main {
+  width: 100％;
+  height: calc(100vh - 48px);
+  background-color: #fff;
+  .head {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    .head-center {
+      position: absolute;
+      bottom: 0;
+      font-size: 40px;
+      font-weight: 600;
+      color: #0071e3;
+    }
+    .head-right {
+      position: absolute;
+      right: 50px;
+      background-color: #f5f5f7;
+      height: 100%;
+      font-size: 20px;
+      width: 300px;
+      display: flex;
+      text-align: center;
+      li {
+        width: 33%;
+        height: 100%;
+        line-height: 100px;
+      }
+    }
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    .front {
+      height: 300px;
+      width: 22%;
+      border: solid 1px;
+      margin-left: 40px;
+      margin-top: 40px;
+    }
+  }
+}
+
+/*showページのSCSS*/
+.show-main {
+  height: 100%;
+  padding: 0px 40px;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    height: calc(100vh - 48px);
+    .list {
+      height: 60%;
+      width: 45%;
+      border: solid 1px;
+      margin-left: 60px;
+      margin-top: 60px;
+    }
+    .lists__comment {
+      padding-left: 20px;
+      font-size: 30px;
+      .upper {
+        height: 20%;
+        display: flex;
+        align-items: center;
+        &__date {
+          
+        }
+        &__poster {
+          padding-left: 30px;
+        }
+      }
+      .midle {
+        height: 60%;
+        padding-top: 10px;
+      }
+      .bottom {
+        height: 20%;
+        display: flex;
+        align-items: center;
+        &__btn {
+
+        }
+        &__icon {
+          padding-left: 50px;
+        }
+      }
+    }
+  }
+}
+
+/*newページのSCSS*/
+.new-main {
+  height: 100%;
+  margin: 0 auto;
+  .photos {
+    display: flex;
+    .photo {
+      
+    }
+  }
+}

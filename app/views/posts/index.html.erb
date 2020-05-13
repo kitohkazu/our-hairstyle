@@ -1,2 +1,37 @@
-<h1>Posts#index</h1>
-<p>Find me in app/views/posts/index.html.erb</p>
+<div class="main">
+  <div class="head">
+    <div class="head-center">
+      投稿してみる！
+    </div>
+    <ul class="head-right">
+      <li class="head-righ__male">男性</li>
+      <li class="head-right__female">女性</li>
+      <li class="head-right__likes">likes</li>
+    </ul>
+   </div>
+
+  <div class="container">
+    <div class="front">
+      写真1
+    </div>
+    <div class="front">
+      写真2
+    </div>
+    <div class="front">
+      写真3
+    </div>
+    <div class="front">
+      写真4
+    </div>
+    <div class="front">
+      写真5
+    </div>
+  </div>
+
+  <div class="photos">
+  <% @post.images.each do |image| %>
+    <%= image_tag image.src.url %>
+  <% end %>
+  </div>
+
+</div>

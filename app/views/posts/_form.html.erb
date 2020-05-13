@@ -1,0 +1,9 @@
+<div class="new-main">
+  <%= form_with model: @post do |f| %>
+    <%= f.fields_for :images do |i| %>
+      <%= i.file_field :src %><br>
+    <% end %>
+    <%= f.text_area :comment, placeholder: "コメントを入力してください" %>
+    <%= f.submit "送信" %>
+  <% end %>
+</div>
