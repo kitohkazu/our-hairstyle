@@ -1,7 +1,7 @@
 <div class="main">
   <div class="head">
     <div class="head-center">
-      投稿してみる！
+      <%= link_to  "投稿してみる！", new_post_path %>
     </div>
     <ul class="head-right">
       <li class="head-righ__male">男性</li>
@@ -28,10 +28,6 @@
     </div>
   </div>
 
-  <div class="photos">
-  <% @post.images.each do |image| %>
-    <%= image_tag image.src.url %>
-  <% end %>
-  </div>
+  
 
 </div>
