@@ -12,7 +12,9 @@
 
   <div class="container">
     <div class="front">
-      写真1
+      <% @posts.first.images.each do |image| %>
+        <%= image_tag image.src.url %>
+      <% end %>
     </div>
     <div class="front">
       写真2
