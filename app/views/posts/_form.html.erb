@@ -1,8 +1,13 @@
 <div class="new-main">
   <%= form_for @post do |f| %>
-    <%= f.fields_for :images do |i| %>
-      <%= i.file_field :src %><br>
-    <% end %>
+    <div id="image-box">
+      <%= f.fields_for :images do |i| %>
+        <div data-index="<%= i.index %>" class="js-file_group">
+          <%= i.file_field :src, class: 'js-file' %><br>
+          <span class="js-remove">削除</span>
+        </div>
+      <% end %>
+    </div>
     <%= f.text_area :comment, placeholder: "コメントを入力してください" %>
     <%= f.submit "送信" %>
   <% end %>
