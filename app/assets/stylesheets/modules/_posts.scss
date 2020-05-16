@@ -144,3 +144,16 @@
     }
   }
 }
+
+/*formページのSCSS*/
+.img_box_boxs {
+  height: 100%;
+  margin: 0 auto;
+  .img_box_boxs{
+    display: flex;
+    justify-content: space-between;
+    li {
+      
+    }
+  }
+}
