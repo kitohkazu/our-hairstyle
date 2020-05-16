@@ -12,8 +12,10 @@
 
   <div class="container">
     <div class="front">
-      <% @posts.first.images.each do |image| %>
-        <%= image_tag image.src.url %>
+      <% @images.each do |image| %>
+        <% if (image.id + 2) % 3 == 0 %>
+          <%= image_tag image.src.url %>
+        <% end %>
       <% end %>
     </div>
     <div class="front">
@@ -29,7 +31,4 @@
       写真5
     </div>
   </div>
-
-  
-
 </div>
