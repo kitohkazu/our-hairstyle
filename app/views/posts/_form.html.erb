@@ -38,8 +38,9 @@
         </div>
       <% end %>
     </div>
-    <%= f.text_area :comment, placeholder: "コメントを入力してください" %>
-    <%= f.radio_button :gender, "男" %>男 <%= f.radio_button :gender, "女" %>女
+    <%= f.text_area :comment, placeholder: "コメントを入力してください" %><br>
+    <%= f.radio_button :gender, "男" %>男 
+    <%= f.radio_button :gender, "女" %>女<br>
     <%= f.submit "送信" %>
   <% end %>
 </div>

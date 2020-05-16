@@ -133,27 +133,40 @@
   }
 }
 
-/*newページのSCSS*/
+/*new(form)ページのSCSS*/
 .new-main {
-  height: 100%;
-  margin: 0 auto;
-  .photos {
-    display: flex;
-    .photo {
-      
-    }
-  }
-}
+  height: calc(100vh - 48px);
+  
+  form {
+    padding-top: 100px;
+    width: 900px;
+    margin: 0 auto;
+    #image-box{
 
-/*formページのSCSS*/
-.img_box_boxs {
-  height: 100%;
-  margin: 0 auto;
-  .img_box_boxs{
-    display: flex;
-    justify-content: space-between;
-    li {
-      
+      ul {
+        display: flex;
+        li {
+          width: 300px;
+          height: 300px;
+          border: solid 1px;
+        }
+      }
+      .photo_form_box {
+        display: flex;
+        justify-content: space-around;
+        .photo_display1 {
+          display: flex;
+        }
+        .photo_display2 {
+          display: flex;
+        }
+        .photo_display3 {
+          display: flex;
+        }
+      }
+    }
+    input {
+     
     }
   }
 }
