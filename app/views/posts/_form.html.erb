@@ -1,10 +1,40 @@
 <div class="new-main">
   <%= form_for @post do |f| %>
     <div id="image-box">
-      <%= f.fields_for :images do |image| %>
-        <div data-index="<%= image.index %>" class="js-file_group">
-          <%= image.file_field :src, class: 'js-file' %><br>
-          <span class="js-remove">削除</span>
+      <%= f.fields_for :images do |i| %>
+        <ul class="img_box_boxs">
+          <li class="img_box1"></li>
+          <li class="img_box2"></li>
+          <li class="img_box3"></li>
+        </ul>
+        <div class="photo_form_box">
+          <div class="photo_display1">
+            <%= i.label :src, for: "image", class: "image_label1", id: "photo" do %>
+              <%= i.file_field :src, name: "post[images_attributes][0][src]", class: "file_field1", id: "image", style: "display: none;" %>
+              選択
+            <% end %>
+            <div class="remove_btn1">
+              削除
+            </div>
+          </div>
+          <div class="photo_display2">
+            <%= i.label :src, for: "image2", class: "image_label2", id: "photo2" do %>
+              <%= i.file_field :src, name: "post[images_attributes][1][src]", class: "file_field2", id: "image2", style: "display: none;" %>
+              選択
+            <% end %>
+            <div class="remove_btn2">
+              削除
+            </div>
+          </div>
+          <div class="photo_display3">
+            <%= i.label :src, for: "image3", class: "image_label3", id: "photo3" do %>
+              <%= i.file_field :src, name: "post[images_attributes][2][src]", class: "file_field3", id: "image3", style: "display: none;" %>
+              選択
+            <% end %>
+            <div class="remove_btn3">
+              削除
+            </div>
+          </div>
         </div>
       <% end %>
     </div>
