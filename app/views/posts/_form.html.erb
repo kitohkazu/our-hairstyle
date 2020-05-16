@@ -1,9 +1,9 @@
 <div class="new-main">
   <%= form_for @post do |f| %>
     <div id="image-box">
-      <%= f.fields_for :images do |i| %>
-        <div data-index="<%= i.index %>" class="js-file_group">
-          <%= i.file_field :src, class: 'js-file' %><br>
+      <%= f.fields_for :images do |image| %>
+        <div data-index="<%= image.index %>" class="js-file_group">
+          <%= image.file_field :src, class: 'js-file' %><br>
           <span class="js-remove">削除</span>
         </div>
       <% end %>
