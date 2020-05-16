@@ -32,7 +32,7 @@ class PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:comment, :group_id, images_attributes: [:src]).merge(user_id: current_user.id)
+    params.require(:post).permit(:comment, :gender, images_attributes: [:src]).merge(user_id: current_user.id)
   end
   
 end

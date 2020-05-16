@@ -10,7 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_13_102622) do
+ActiveRecord::Schema.define(version: 2020_05_16_090708) do
+
+  create_table "groups", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.integer "gender", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "images", id: :integer, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "src"
@@ -22,7 +28,7 @@ ActiveRecord::Schema.define(version: 2020_05_13_102622) do
   create_table "posts", id: :integer, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "comment"
     t.integer "user_id"
-    t.integer "group_id"
+    t.integer "gender"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
