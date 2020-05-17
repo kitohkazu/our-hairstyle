@@ -1,24 +1,24 @@
 <div class="show-main">
-    <ul class="lists">
-      <li class="list">
-        <% @images.each do |image| %>
-          <%= image_tag(image.src.url) %>
+  <div class="lists">
+    <div>
+      <% @images.each do |image| %>
+        <%= image_tag image.src.url, size: "400x400", alt: "fair-style" %>
+      <% end %>
+    </div>
+    <div class="comment">
+      <div class="upper">
+        <p class="upper__date"><%= @post.created_at %></p>
+        <p class="upper__poster"><%= @user.name %></p>
+      </div>
+      <div class="midle">
+        <%= @post.comment %>
+      </div>
+      <div class="bottom">
+        <%= button_to "like" %>
+        <%= link_to "https://twitter.com/", class: "bottom__icon" do %>
+          <i class="fab fa-twitter"></i>
         <% end %>
-      </li>
-      <li class="list lists__comment">
-        <div class="upper">
-          <p class="upper__date"><%= @post.created_at %></p>
-          <p class="upper__poster"><%= @user.name %></p>
-        </div>
-        <div class="midle">
-          <%= @post.comment %>
-        </div>
-        <div class="bottom">
-          <%= button_to "like" %>
-          <%= link_to "https://twitter.com/", class: "bottom__icon" do %>
-            <i class="fab fa-twitter"></i>
-          <% end %>
-        </div>
-      </li>
-    </ul>
+      </div>
+    </div>
+  </div>
 </div>

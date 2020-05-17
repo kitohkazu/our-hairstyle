@@ -90,21 +90,20 @@
 /*showページのSCSS*/
 .show-main {
   height: 100%;
-  padding: 0px 40px;
-  ul {
-    display: flex;
-    flex-wrap: wrap;
-    height: calc(100vh - 48px);
-    .list {
-      height: 60%;
+  padding: 0px 150px;
+  .lists {
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    /*height: calc(100vh - 48px);*/
+    .comment {
+      height: 400px;
       width: 45%;
       border: solid 1px;
-      margin-left: 60px;
-      margin-top: 60px;
-    }
-    .lists__comment {
       padding-left: 20px;
-      font-size: 30px;
+      font-size: 30px;  
+      margin: 0 auto;
+      margin-top: 40px;
+      margin-bottom: 40px;
       .upper {
         height: 20%;
         display: flex;
