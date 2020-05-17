@@ -1,8 +1,10 @@
 <div class="show-main">
     <ul class="lists">
-      <li class="list">写真1正面</li>
-      <li class="list">写真1側面</li>
-      <li class="list">写真1背面</li>
+      <li class="list">
+        <% @images.each do |image| %>
+          <%= image_tag(image.src.url) %>
+        <% end %>
+      </li>
       <li class="list lists__comment">
         <div class="upper">
           <p class="upper__date"><%= @post.created_at %></p>

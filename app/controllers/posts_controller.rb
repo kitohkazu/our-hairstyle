@@ -33,7 +33,8 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
     @user = User.find_by(id: @post.user_id)
     # @images = Image.find(params[:post_id])
-    @images = Image.find_by(post_id: @post.id)
+    # @images = Image.find_by(post_id: @post.id)
+    @images = Image.where(post_id: @post.id)
   end
 
   private
