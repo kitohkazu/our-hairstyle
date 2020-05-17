@@ -14,7 +14,7 @@
     <div class="front">
       <% @images.each do |image| %>
         <% if (image.id + 2) % 3 == 0 %>
-          <%= image_tag image.src.url %>
+          <%= link_to image_tag(image.src.url), post_path(image.post_id) %>
         <% end %>
       <% end %>
     </div>

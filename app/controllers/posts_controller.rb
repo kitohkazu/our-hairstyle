@@ -28,6 +28,10 @@ class PostsController < ApplicationController
   end
 
   def show
+    # @image = Image.find(params[:id])
+    # @post = Post.find(params[:post_id])
+    @post = Post.find(params[:id])
+    @user = User.find_by(id: @post.user_id)
   end
 
   private

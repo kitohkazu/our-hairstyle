@@ -5,11 +5,11 @@
       <li class="list">写真1背面</li>
       <li class="list lists__comment">
         <div class="upper">
-          <p class="upper__date">2020年5月10日14時00分</p>
-          <p class="upper__poster">投稿者</p>
+          <p class="upper__date"><%= @post.created_at %></p>
+          <p class="upper__poster"><%= @user.name %></p>
         </div>
         <div class="midle">
-          代官山の美容室で切ってもらいました
+          <%= @post.comment %>
         </div>
         <div class="bottom">
           <%= button_to "like" %>
