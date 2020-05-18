@@ -1,9 +1,46 @@
 <div class="new-main">
   <%= form_for @post do |f| %>
-    <%= f.fields_for :images do |i| %>
-      <%= i.file_field :src %><br>
-    <% end %>
-    <%= f.text_area :comment, placeholder: "コメントを入力してください" %>
+    <div id="image-box">
+      <%= f.fields_for :images do |i| %>
+        <ul class="img_box_boxs">
+          <li class="img_box1">fron</li>
+          <li class="img_box2">side</li>
+          <li class="img_box3">back</li>
+        </ul>
+        <div class="photo_form_box">
+          <div class="photo_display1">
+            <%= i.label :src, for: "image", class: "image_label1", id: "photo" do %>
+              <%= i.file_field :src, name: "post[images_attributes][0][src]", class: "file_field1", id: "image", style: "display: none;" %>
+              選択
+            <% end %>
+            <div class="remove_btn1">
+              削除
+            </div>
+          </div>
+          <div class="photo_display2">
+            <%= i.label :src, for: "image2", class: "image_label2", id: "photo2" do %>
+              <%= i.file_field :src, name: "post[images_attributes][1][src]", class: "file_field2", id: "image2", style: "display: none;" %>
+              選択
+            <% end %>
+            <div class="remove_btn2">
+              削除
+            </div>
+          </div>
+          <div class="photo_display3">
+            <%= i.label :src, for: "image3", class: "image_label3", id: "photo3" do %>
+              <%= i.file_field :src, name: "post[images_attributes][2][src]", class: "file_field3", id: "image3", style: "display: none;" %>
+              選択
+            <% end %>
+            <div class="remove_btn3">
+              削除
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+    <%= f.text_area :comment, placeholder: "コメントを入力してください" %><br>
+    <%= f.radio_button :gender, "男" %>男 
+    <%= f.radio_button :gender, "女" %>女<br>
     <%= f.submit "送信" %>
   <% end %>
 </div>
