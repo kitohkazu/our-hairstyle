@@ -1,7 +1,6 @@
 class PostsController < ApplicationController
   def index
-    @posts = Post.includes(:images).order('created_at DESC')
-    @images = Image.all
+    @posts = Post.includes(:images)
   end
 
   def new
@@ -14,7 +13,7 @@ class PostsController < ApplicationController
     if @post.save
       redirect_to root_path
     else
-      render :new
+      redirect_to new_post_path, alert: "画像を一枚以上選択してください"
     end
   end
 

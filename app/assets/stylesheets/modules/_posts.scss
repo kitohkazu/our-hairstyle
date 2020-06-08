@@ -84,10 +84,11 @@
       display: flex;
       flex-wrap: wrap;
       margin-left: 40px;
+      margin-right: 40px;
       margin-top: 40px;
-      img {
-        padding-top: 30px;
-        padding-left: 30px;
+      a {
+        margin-top: 40px;
+        margin-left: 40px;
       }
     }
   }

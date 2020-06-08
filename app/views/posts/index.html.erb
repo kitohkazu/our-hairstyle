@@ -12,10 +12,8 @@
 
   <div class="container">
     <div class="front">
-      <% @images.each do |image| %>
-        <% if (image.id + 2) % 3 == 0 %>
-          <%= link_to image_tag(image.src.url, size: "350x350"), post_path(image.post_id) %>
-        <% end %>
+      <% @posts.each do |post| %>
+        <%= link_to image_tag(post.images.first.src.url, size: "300x300"), post_path(post.id) %>
       <% end %>
     </div>
   </div>
