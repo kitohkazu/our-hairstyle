@@ -1,4 +1,5 @@
 class Post < ApplicationRecord
+  validates :images, presence: true
   has_many :images
   has_many :likes
   belongs_to :user
