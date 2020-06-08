@@ -1,6 +1,8 @@
 class PostsController < ApplicationController
   def index
     @posts = Post.includes(:images)
+    @posts_men = Post.where(gender: 0).includes(:images)
+    @posts_women = Post.where(gender: 1).includes(:images)
   end
 
   def new
