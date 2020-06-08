@@ -16,7 +16,7 @@
       </div>
       <div class="header-right">
         <div class="header-right__name">
-          name
+          <%= current_user.name%>
         </div>
         <% if user_signed_in? %>
           <div class="header-right__btn">
