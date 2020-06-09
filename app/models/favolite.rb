@@ -1,0 +1,2 @@
+class Favolite < ApplicationRecord
+end
