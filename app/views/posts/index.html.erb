@@ -1,20 +1,32 @@
 <div class="main">
+
   <div class="head">
     <div class="head-center">
       <%= link_to  "投稿してみる！", new_post_path %>
     </div>
-    <ul class="head-right">
-      <li class="head-righ__male">男性</li>
-      <li class="head-right__female">女性</li>
-      <li class="head-right__likes">likes</li>
+    <ul class="head-menu">
+      <li><a href="#" id="about" class="head-righ active">All</a></li>
+      <li><a href="#" id="service" class="head-righ">Mens</a></li>
+      <li><a href="#" id="contact" class="head-righ">Ladies</a></li>
     </ul>
    </div>
 
-  <div class="container">
-    <div class="front">
+  <ul class="container">
+    <li class="front show">
       <% @posts.each do |post| %>
         <%= link_to image_tag(post.images.first.src.url, size: "300x300"), post_path(post.id) %>
       <% end %>
-    </div>
-  </div>
+    </li>
+    <li class="front">
+      <% @posts_men.each do |post_men| %>
+        <%= link_to image_tag(post_men.images.first.src.url, size: "300x300"), post_path(post_men.id) %>
+      <% end %>
+    </li>
+    <li class="front">
+      <% @posts_lady.each do |post_lady| %>
+        <%= link_to image_tag(post_lady.images.first.src.url, size: "300x300"), post_path(post_lady.id) %>
+      <% end %>
+    </li>
+  </ul>
+
 </div>
