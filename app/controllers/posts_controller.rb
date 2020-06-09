@@ -33,6 +33,7 @@ class PostsController < ApplicationController
     @user = User.find_by(id: @post.user_id)
     @images = Image.where(post_id: @post.id)
     @favorite = Favorite.find_by(user_id: current_user.id, post_id: @post.id)
+    @avorites = Favorite.all
   end
 
   private
