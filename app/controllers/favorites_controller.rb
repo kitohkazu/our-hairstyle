@@ -15,6 +15,7 @@ class FavoritesController < ApplicationController
   end
 
   def index
+    @favorite_posts = Post.joins(:favorites).where(favorites: {user_id: current_user})
   end
 
 end
