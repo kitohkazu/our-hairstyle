@@ -1,15 +1,18 @@
 <div class="main">
 
   <div class="head">
-    <div class="head-center">
-      <%= link_to  "投稿してみる！", new_post_path %>
-    </div>
     <ul class="head-menu">
       <li><a href="#" id="about" class="head-righ active">All</a></li>
       <li><a href="#" id="service" class="head-righ">Mens</a></li>
       <li><a href="#" id="contact" class="head-righ">Ladies</a></li>
     </ul>
-   </div>
+  </div>
+
+  <div class="middle">
+      <%= link_to  "投稿してみる！", new_post_path %>
+      or
+      <%= link_to  "お気に入りを見る！", favorites_path %>
+  </div>
 
   <ul class="container">
     <li class="front show">

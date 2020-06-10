@@ -52,16 +52,6 @@
     display: flex;
     justify-content: center;
     position: relative;
-    .head-center {
-      position: absolute;
-      bottom: 0;
-      font-size: 40px;
-      font-weight: 600;
-      a {
-        text-decoration: none;
-        color: #0071e3;
-      }
-    }
     .head-menu {
       position: absolute;
       right: 50px;
@@ -76,6 +66,15 @@
         height: 100%;
         line-height: 100px;
       }
+    }
+  }
+  .middle {
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    a {
+      text-decoration: none;
+      color: #0071e3;
     }
   }
   .container {
