@@ -5,6 +5,10 @@ class FavoritesController < ApplicationController
     if favorite.save
       redirect_to post_path(params[:post_id])
     end
+    # respond_to do |format|
+    #   format.html { redirect_to @post }
+    #   format.js
+    # end
   end
 
   def destroy
@@ -12,6 +16,10 @@ class FavoritesController < ApplicationController
     if favorite.destroy
       redirect_to post_path(params[:post_id])
     end
+    # respond_to do |format|
+    #   format.html { redirect_to @post }
+    #   format.js
+    # end
   end
 
   def index
