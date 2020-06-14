@@ -14,16 +14,10 @@
         <%= @post.comment %>
       </div>
       <div class="bottom">
-        <% if @favorite %>
-          <%= link_to "/posts/#{@post.id}/favorites/#{@favorite.id}", method: :delete do %>
-            <i class="fas fa-heart"></i>
-          <% end %>
-        <% else %>
-          <%= link_to "/posts/#{@post.id}/favorites", method: :post do %>
-            <i class="far fa-heart"></i>
-          <% end %>
-        <% end %>
-        <%= @post.favorites.size %>
+        <%= render partial: 'favorites/favorite' %>
+        <div class="favorites-count">
+          <%= @post.favorites.size %>
+        </div>
         <%= link_to "https://twitter.com/", class: "bottom__icon" do %>
           <i class="fab fa-twitter"></i>
         <% end %>
