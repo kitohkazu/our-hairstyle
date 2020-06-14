@@ -15,10 +15,11 @@
         <%= link_to "OurHairstyle", root_path %>
       </div>
       <div class="header-right">
-        <div class="header-right__name">
-          <%= current_user.name%>
-        </div>
+        
         <% if user_signed_in? %>
+          <div class="header-right__name">
+            <%= current_user.name %>
+          </div>
           <div class="header-right__btn">
             <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
           </div>

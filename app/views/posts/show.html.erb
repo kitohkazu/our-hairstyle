@@ -14,7 +14,10 @@
         <%= @post.comment %>
       </div>
       <div class="bottom">
-        <%= button_to "like" %>
+        <%= render partial: 'favorites/favorite' %>
+        <div class="favorites-count">
+          <%= @post.favorites.size %>
+        </div>
         <%= link_to "https://twitter.com/", class: "bottom__icon" do %>
           <i class="fab fa-twitter"></i>
         <% end %>

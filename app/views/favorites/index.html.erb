@@ -1,0 +1,9 @@
+<div class="main">
+  <ul class="container">
+    <li class="front show">
+      <% @favorite_posts.each do |favorite_post| %>
+        <%= link_to image_tag(favorite_post.images.first.src.url, size: "300x300"), post_path(favorite_post.id) %>
+      <% end %>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,13 @@
+<% if @favorite %>
+  <div id="liked">
+    <%= link_to "/posts/#{@post.id}/favorites/#{@favorite.id}", method: :delete, class: "favorites-icon" do %>
+      <i class="fas fa-heart"></i>
+    <% end %>
+  </div>
+<% else %>
+  <div id="likable">
+    <%= link_to "/posts/#{@post.id}/favorites", method: :post, class: "favorites-icon" do %>
+      <i class="far fa-heart"></i>
+    <% end %>
+  </div>
+<% end %>

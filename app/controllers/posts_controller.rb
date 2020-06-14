@@ -29,13 +29,11 @@ class PostsController < ApplicationController
   end
 
   def show
-    # @image = Image.find(params[:id])
-    # @post = Post.find(params[:post_id])
     @post = Post.find(params[:id])
     @user = User.find_by(id: @post.user_id)
-    # @images = Image.find(params[:post_id])
-    # @images = Image.find_by(post_id: @post.id)
     @images = Image.where(post_id: @post.id)
+    @favorite = Favorite.find_by(user_id: current_user.id, post_id: @post.id)
+    @avorites = Favorite.all
   end
 
   private
