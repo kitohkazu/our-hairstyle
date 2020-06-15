@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: our-hairstyle_production
-  username: our-hairstyle
-  password: <%= ENV['OUR-HAIRSTYLE_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
