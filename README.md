@@ -27,6 +27,9 @@ webアプリケーションです。
 ## Basic認証
 - ID: admin
 - PW: 11aa
+## テストアカウント
+- email:  test1@mail.com
+- PW: 123456
 
 # DB設計
 ![ER%E5%9B%B3.png](https://github.com/kitohkazu/our-hairstyle/blob/master/ER%E5%9B%B3.png)
