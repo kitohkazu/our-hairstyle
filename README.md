@@ -1,17 +1,19 @@
-# README
+# our-hairstyleとは？
+「〜みんなで作るヘアカタログ〜」をコンセプトに
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+①髪型写真の投稿ができる
 
-Things you may want to cover:
+②みんなが投稿した写真を見られる
 
-* Ruby version
-  ruby 2.5.1
-* System dependencies
+③好みの写真のヘアカタログを作れる
 
-* Configuration
 
-* Database creation
+webアプリケーションです。
+
+# 開発背景
+みなさんは美容師さんに髪型を伝えても上手く伝わらず、仕上がりに満足できなかった事はありませんか？それならモデルの写真を準備しようとしても、いつもの写真を無くしてしまったり、好みの新しい写真を見つけることに苦労した事はありませんか？
+そんな悩みを解消したいという思いから本アプリを開発しました。
+
 # DB設計
 ## usersテーブル
 |Column|Type|Options|
