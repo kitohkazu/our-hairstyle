@@ -23,6 +23,8 @@ webアプリケーションです。
   - AWS(EC2 , S3)/Unicorn/Nginx/MySQL/Capistrano
 
 # DB設計
+![ER%E5%9B%B3.png](https://github.com/kitohkazu/our-hairstyle/blob/master/ER%E5%9B%B3.png)
+
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
