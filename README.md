@@ -16,11 +16,17 @@ webアプリケーションです。
 - 画像プレビュー機能(JavaScript, CarrierWave)
 - カテゴリごとの一覧表示
 - お気に入り機能
+
 # 使用技術
 - 開発環境
   - Ruby/Ruby on Rails/Scss/JavaScript/Jquery/MySQL/Github/Visual Studio Code
 - 本番環境
   - AWS(EC2 , S3)/Unicorn/Nginx/MySQL/Capistrano
+
+# 接続先情報
+## Basic認証
+- ID: admin
+- PW: 11aa
 
 # DB設計
 ![ER%E5%9B%B3.png](https://github.com/kitohkazu/our-hairstyle/blob/master/ER%E5%9B%B3.png)
