@@ -3,6 +3,9 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 * {
   box-sizing: border-box;
+  .fa-heart {
+    color: pink;
+  }
 }
 
 /*共通headerのSCSS*/
@@ -110,47 +113,48 @@
   height: 100%;
   padding: 0px 150px;
   .lists {
-    /*display: flex;*/
-    /*flex-wrap: wrap;*/
-    /*height: calc(100vh - 48px);*/
     img {
       padding-top: 50px;
       padding-left: 50px;
     }
     .comment {
-      height: 400px;
       width: 45%;
-      border: solid 1px;
-      padding-left: 20px;
-      font-size: 30px;  
+      box-shadow: 0 0 8px gray;
+      padding: 20px; 
       margin: 0 auto;
       margin-top: 40px;
       margin-bottom: 40px;
+      border-radius: 10px;
       .upper {
-        height: 20%;
         display: flex;
         align-items: center;
+        padding-bottom: 10px;
+        border-bottom: solid 1px #ebebeb;
         &__date {
-          
+          color: #86868b;
+          font-size: 20px;
         }
         &__poster {
           padding-left: 30px;
+          font-size: 25px;
         }
       }
-      .midle {
-        height: 60%;
-        padding-top: 10px;
+      .midle { 
+        padding: 10px 0;
+        border-bottom: solid 1px #ebebeb;
+        font-size: 30px;
       }
       .bottom {
-        height: 20%;
         display: flex;
         align-items: center;
-        &__btn {
-
+        padding-top: 10px;
+        font-size: 25px;
+        .favorites-count {
+          padding-left: 7px;
         }
-        &__icon {
-          padding-left: 50px;
-        }
+        // &__icon {
+        //   padding-left: 50px;
+        // }
       }
     }
   }
