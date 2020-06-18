@@ -24,9 +24,6 @@ webアプリケーションです。
   - AWS(EC2 , S3)/Unicorn/Nginx/MySQL/Capistrano
 
 # 接続先情報
-## Basic認証
-- ID: admin
-- PW: 11aa
 ## テストアカウント
 - email:  test1@mail.com
 - PW: 123456
