@@ -7,7 +7,7 @@
     </div>
     <div class="comment">
       <div class="upper">
-        <p class="upper__date"><%= @post.created_at %></p>
+        <p class="upper__date"><%= @post.created_at.strftime("%Y/%m/%d %H:%M") %></p>
         <p class="upper__poster"><%= @user.name %></p>
       </div>
       <div class="midle">
@@ -18,9 +18,9 @@
         <div class="favorites-count">
           <%= @post.favorites.size %>
         </div>
-        <%= link_to "https://twitter.com/", class: "bottom__icon" do %>
-          <i class="fab fa-twitter"></i>
-        <% end %>
+        <%# <%= link_to "https://twitter.com/", class: "bottom__icon" do %>
+          <%# <i class="fab fa-twitter"></i> %>
+        <%# <% end %>
       </div>
     </div>
   </div>
