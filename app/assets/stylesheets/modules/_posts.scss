@@ -111,12 +111,21 @@
 /*showページのSCSS*/
 .show-main {
   height: 100%;
-  padding: 0px 150px;
+  padding: 0px 100px;
   .lists {
-    img {
-      padding-top: 50px;
-      padding-left: 50px;
+    .image-view {
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      img {
+        padding-top: 50px;
+        padding-left: 50px;
+      }
     }
+    
+    
     .comment {
       width: 45%;
       box-shadow: 0 0 8px gray;

@@ -1,6 +1,6 @@
 <div class="show-main">
   <div class="lists">
-    <div>
+    <div class="image-view">
       <% @images.each do |image| %>
         <%= image_tag image.src.url, size: "400x400", alt: "fair-style" %>
       <% end %>
