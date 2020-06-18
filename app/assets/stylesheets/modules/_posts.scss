@@ -3,6 +3,14 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 * {
   box-sizing: border-box;
+  a {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+  }
+  .fa-heart {
+    color: pink;
+  }
 }
 
 /*共通headerのSCSS*/
@@ -20,7 +28,6 @@
     margin-left: 40px;
     font-size: 25px;
     a {
-      text-decoration: none;
       color: white;
     }
   }
@@ -35,8 +42,10 @@
     }
     &__btn {
       margin-right: 30px;
-      border: solid 1px;
       padding: 7px;
+      a {
+        color: white;
+      }
     }
   }
 }
@@ -108,49 +117,57 @@
 /*showページのSCSS*/
 .show-main {
   height: 100%;
-  padding: 0px 150px;
+  padding: 0px 100px;
   .lists {
-    /*display: flex;*/
-    /*flex-wrap: wrap;*/
-    /*height: calc(100vh - 48px);*/
-    img {
-      padding-top: 50px;
-      padding-left: 50px;
+    .image-view {
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      img {
+        padding-top: 50px;
+        padding-left: 50px;
+      }
     }
     .comment {
-      height: 400px;
       width: 45%;
-      border: solid 1px;
-      padding-left: 20px;
-      font-size: 30px;  
+      box-shadow: 0 0 8px gray;
+      padding: 20px; 
       margin: 0 auto;
       margin-top: 40px;
       margin-bottom: 40px;
+      border-radius: 10px;
       .upper {
-        height: 20%;
         display: flex;
         align-items: center;
+        padding-bottom: 10px;
+        border-bottom: solid 1px #ebebeb;
         &__date {
-          
+          color: #86868b;
+          font-size: 20px;
         }
         &__poster {
           padding-left: 30px;
+          font-size: 25px;
         }
       }
-      .midle {
-        height: 60%;
-        padding-top: 10px;
+      .midle { 
+        padding: 10px 0;
+        border-bottom: solid 1px #ebebeb;
+        font-size: 30px;
       }
       .bottom {
-        height: 20%;
         display: flex;
         align-items: center;
-        &__btn {
-
+        padding-top: 10px;
+        font-size: 25px;
+        .favorites-count {
+          padding-left: 7px;
         }
-        &__icon {
-          padding-left: 50px;
-        }
+        // &__icon {
+        //   padding-left: 50px;
+        // }
       }
     }
   }
@@ -179,17 +196,57 @@
         justify-content: space-around;
         .photo_display1 {
           display: flex;
+          .image_label1 {
+            cursor: pointer;
+          }
+          .remove_btn1 {
+            margin-left: 15px;
+            cursor: pointer;
+          }
         }
         .photo_display2 {
           display: flex;
+          .image_label2 {
+            cursor: pointer;
+          }
+          .remove_btn2 {
+            padding-left: 15px;
+            cursor: pointer;
+          }
         }
         .photo_display3 {
           display: flex;
+          .image_label3 {
+            cursor: pointer;
+          }
+          .remove_btn3 {
+            padding-left: 15px;
+            cursor: pointer;
+          }
         }
       }
     }
-    input {
-     
+    .text-area {
+     margin-top: 15px;
+     textarea {
+      resize: vertical;
+      width: 100%;
+      height: 35px;
+      border: none;
+      border-bottom: 1px solid gray;
+      vertical-align: bottom;
+      padding: 5px 0 0 10px;
+      }    
+    }
+    .radio-btn {
+      margin-top: 15px;
+    }
+    .submit-btn {
+      margin-top: 15px;
+      input {
+        width: 100px;
+        height: 40px;
+      }
     }
   }
 }
