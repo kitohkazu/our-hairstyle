@@ -19,6 +19,17 @@ webアプリケーションです。
 - PW: 123456
 
 # 使用イメージ
+- トップページ
+<img width="1145" alt="top_page" src="https://user-images.githubusercontent.com/64017216/84985769-56e10200-b178-11ea-95db-0dce09bc0a2a.png">
+
+- 投稿ページと詳細ページ
+
+<img width="400" alt="post_page" src="https://user-images.githubusercontent.com/64017216/84985786-5f393d00-b178-11ea-8bb1-ac61d07bd3c5.png">　<img width="400" alt="show_page" src="https://user-images.githubusercontent.com/64017216/84985783-5e081000-b178-11ea-83bc-7db328eb9a88.png">
+
+- お気に入りページと一覧ページ（Ladies表示）
+
+<img width="400" alt="favorites_page" src="https://user-images.githubusercontent.com/64017216/84985789-5fd1d380-b178-11ea-9e21-85570c9b367b.png"> <img width="400" alt="category_page" src="https://user-images.githubusercontent.com/64017216/84985791-5fd1d380-b178-11ea-9154-f744af4e7647.png">
+
 
 # 工夫したポイント
 Mens,Ladiesの一覧表示の切り替えをページ遷移しなくても良いように非同期通信で行えるようにしたこと。
@@ -38,7 +49,6 @@ Mens,Ladiesの一覧表示の切り替えをページ遷移しなくても良い
 
 # 今後実装したい機能
 - 投稿の削除機能
-- 自動更新と自動削除機能
 - ショート、ミディアム、ロングのカテゴリ追加
 - お気に入り機能の非同期通信化
 
