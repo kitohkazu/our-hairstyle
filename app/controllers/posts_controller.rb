@@ -26,6 +26,13 @@ class PostsController < ApplicationController
   end
 
   def destroy
+    @post = Post.find(params[:id])
+    if @post.destroy
+      redirect_to root_path, notice: "削除が完了しました"
+    else
+      flash[:alert] = "削除できませんでした"
+      render :show
+    end
   end
 
   def show
@@ -33,7 +40,7 @@ class PostsController < ApplicationController
     @user = User.find_by(id: @post.user_id)
     @images = Image.where(post_id: @post.id)
     @favorite = Favorite.find_by(user_id: current_user.id, post_id: @post.id)
-    @avorites = Favorite.all
+    @favorites = Favorite.all
   end
 
   private
