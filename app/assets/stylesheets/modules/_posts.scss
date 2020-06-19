@@ -165,9 +165,23 @@
         .favorites-count {
           padding-left: 7px;
         }
-        // &__icon {
-        //   padding-left: 50px;
-        // }
+      }
+    }
+    .link-btn {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto;
+      width: 20%;
+      font-size: 25px;
+      .link-edit-btn {
+        border: solid 1px #0071e3;
+        border-radius: 10px;
+        padding: 3px 10px;
+      }
+      .link-delete-btn {
+        border: solid 1px #0071e3;
+        border-radius: 10px;
+        padding: 3px 10px;
       }
     }
   }
