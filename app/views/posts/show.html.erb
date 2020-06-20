@@ -18,10 +18,17 @@
         <div class="favorites-count">
           <%= @post.favorites.size %>
         </div>
-        <%# <%= link_to "https://twitter.com/", class: "bottom__icon" do %>
-          <%# <i class="fab fa-twitter"></i> %>
-        <%# <% end %>
       </div>
     </div>
+    <% if @post.user_id == current_user.id %>
+      <div class="link-btn">
+        <div class="link-edit-btn">
+          <%= link_to "編集", edit_post_path(@post.id) %>
+        </div>
+        <div class="link-delete-btn">
+          <%= link_to "削除", "/posts/#{@post.id}", method: :delete %>
+        </div>
+      </div>
+    <% end %>
   </div>
 </div>
